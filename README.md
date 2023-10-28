@@ -1,2 +1,2 @@
 # Nani-Estetica
-Diseno de la web de nani estetica
+Diseno de la pagina web de nani estetica
