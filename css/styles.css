@@ -1108,5 +1108,10 @@ footer {
       .form-misdatos h4{
         font-size: 30px;
       }
+
+      .footer-home-home {
+        /*Le da el color degradado al footer, el ancho y los maregenes*/
+        position: absolute;
+    }
       
 }
