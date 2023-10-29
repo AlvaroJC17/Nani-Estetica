@@ -675,6 +675,13 @@ footer {
 
 /*-------- MEDIAS PARA RESPONSIVE ---------*/
 
+@media(max-height:1280px ){
+    .main-misdatos {
+        padding-top: 152px;
+        padding-bottom: 160px;
+    }
+}
+
 @media(max-width: 1440px){
 
     .main-misdatos {
