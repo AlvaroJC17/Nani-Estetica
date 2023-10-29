@@ -327,9 +327,8 @@ footer {
     width: 70px;
     background-color: transparent;
     border-radius: 50%;
-
 }
-/*------ Contenido del body---------*/
+
 .ft{
     /*Estilos de los cuadros de seleccion en el centro de la hoja, ademas de centar el texto*/
     height: 180px;
@@ -361,6 +360,16 @@ footer {
 .hover:hover{
     color: #c59b2d;
 }
+
+.footer-home-home {
+    /*Le da el color degradado al footer, el ancho y los maregenes*/
+    background-image: linear-gradient(to right, #d4af37, #724921);
+    width: 100%;
+    bottom: 0;
+    margin: 0px 0px 0px 0px !important;
+    position: absolute;
+}
+
 
 /*------ FOOTER DE LOS USUARIOS REGISTRADOS*/
 
@@ -897,6 +906,11 @@ footer {
 
     .imagen-formulario-login{
         display: none;
+    }
+
+    .footer-home-home {
+        /*Le da el color degradado al footer, el ancho y los maregenes*/
+        position: static;
     }
 
  
