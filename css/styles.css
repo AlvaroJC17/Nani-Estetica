@@ -819,6 +819,11 @@ footer {
 
 
 @media(max-width: 992px) {
+
+    .main-misdatos {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     .navbar4 {
         /*Le da estilos a la lista del menu, tamaño de letra, centrado y grosor de letra*/
         font-size: 11px !important;
@@ -834,10 +839,7 @@ footer {
 
 @media(max-width: 767px) {
 
-    .main-misdatos {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
+  
     .cabecera {
         /*Posiciona los botones de login y registrase en el menu princial aarriba y a la derecha*/
         align-items: start !important;
