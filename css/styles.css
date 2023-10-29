@@ -307,18 +307,11 @@ footer {
 }
 
 .main-home{
-    /*Le da altura al main y ajusta todo en el centro de la pagina*/
-    height: 80% !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /*Le da altura al main y ajusta todo en el centro de la pagina*/ 
+    padding: 70px 0px 70px 0px;
 }
 
-.body-home{
-    position: relative;
-    height: 100vh;
+.body-interno{
     background-color:#ebdf9d ;
    }   
 
@@ -329,11 +322,16 @@ footer {
     border-radius: 50%;
 }
 
+.ft .iconos{
+    height: 50px;
+    margin: 0;
+}
+
 .ft{
     /*Estilos de los cuadros de seleccion en el centro de la hoja, ademas de centar el texto*/
-    height: 180px;
-    width: 360px;
-    margin: 10px;
+    height: 235px;
+    width: 600px;
+    margin: 21px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -367,19 +365,18 @@ footer {
     width: 100%;
     bottom: 0;
     margin: 0px 0px 0px 0px !important;
-    position: absolute;
+    
 }
 
 
 /*------ FOOTER DE LOS USUARIOS REGISTRADOS*/
 
-.footer-home {
+.footer-general {
     /*Le da el color degradado al footer, el ancho y los maregenes*/
     background-image: linear-gradient(to right, #d4af37, #724921);
     width: 100%;
     bottom: 0;
     margin: 0px 0px 0px 0px !important;
-    position: absolute;
 }
 
 .contenedor-logo-final-home{
@@ -388,17 +385,12 @@ footer {
 }
 
 .img-logo-final-home{
-    /*Estilos al ultimo logo del footer*/
+    /*Estilos al ultimo logo del footer*/     /*modificar para mediea********************************/
     border-radius: 50%;
-    width: 50px;
+    width: 65px;
 }
 
   /*----- PAGINA LOGIN ---------*/
-
-  .body-login{
-    height: 100vh;
-    position: relative;
-  }
 
   .texto-recuperar1{
     margin-top: 15px;
@@ -422,11 +414,10 @@ footer {
   }
 
   .main-login{
-    padding-top: 70px;
-    padding-bottom: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px 0px 50px 0px;
   }
 
   .imagen-formulario-login{
@@ -523,8 +514,8 @@ footer {
   /*PAGINA DE REGISTRO DE USUARIOS*/
 
   .main-registrarse-2{
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-bottom: 35px;
+    padding-top: 35px;
 }
 
 .texto-label{
@@ -684,7 +675,7 @@ footer {
 
 /*-------- MEDIAS PARA RESPONSIVE ---------*/
 
-@media(max-width: 1400px){
+@media(max-width: 1440px){
 
     .main-misdatos{
         padding-top: 30px;
@@ -718,6 +709,21 @@ footer {
         font-size: 15px;
       }
 
+      .ft {
+        height: 100px;
+        width: 360px;
+        font-size: 20px;
+    }
+
+    .main-home{
+        /*Le da altura al main y ajusta todo en el centro de la pagina*/ 
+        padding: 45px 0px 45px 0px;
+    }
+
+    .ft .iconos{
+        height: 30px;
+        margin: 0;
+    }
 }
 
 
@@ -727,12 +733,6 @@ footer {
     .main-registrarse-2{
         padding-bottom: 50px;
     }
-
-    .body-login{
-        position: relative;
-        padding-bottom: 50px;
-        height: 100%;
-      }
 
    .body-home{
     position: relative;
@@ -824,12 +824,6 @@ footer {
     .navbar4 {
         /*Le da estilos a la lista del menu, tamaño de letra, centrado y grosor de letra*/
         font-size: 11px !important;
-    }
-  
-    .ft {
-        height: 100px;
-        width: 360px;
-        font-size: 20px;
     }
 
     .main-home{
@@ -1062,12 +1056,6 @@ footer {
         font-size: 20px;
     }
 
-    .main-home{
-        height: auto;
-        margin-top: 10px;
-        
-    }
-
     .img-logo{
         margin-left: 0px;
     }
@@ -1114,8 +1102,11 @@ footer {
         position: absolute;
     }
 
-    .main-home {
-    margin-top: 50px;
+  
+.login-box {
+    width: 90%;
+    margin-left: 15px;
+}
+  
 }
       
-}
