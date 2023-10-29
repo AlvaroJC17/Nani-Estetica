@@ -677,6 +677,10 @@ footer {
 
 @media(max-width: 1440px){
 
+    .container{
+        margin-bottom: 65px;
+    }
+
     .main-misdatos{
         padding-top: 30px;
         padding-bottom: 30px;
@@ -708,13 +712,7 @@ footer {
       .form-misdatos .text-center{
         font-size: 15px;
       }
-
-      .ft {
-        height: 100px;
-        width: 360px;
-        font-size: 20px;
-    }
-
+ 
     .main-home{
         /*Le da altura al main y ajusta todo en el centro de la pagina*/ 
         padding: 45px 0px 45px 0px;
@@ -901,16 +899,18 @@ footer {
     .imagen-formulario-login{
         display: none;
     }
-
-    .footer-home-home {
-        /*Le da el color degradado al footer, el ancho y los maregenes*/
-        position: static;
-    }
+   
 
  
 }
 
 @media(max-width: 576px) {
+
+    .ft {
+        height: 200px;
+        width: 360px;
+        font-size: 20px;
+    }
     .header-flex {
         /*Posciona el logo principal encima del titulo principal para este tamaño de pantalla! NO BORRAR! */
         display: block;
@@ -974,6 +974,12 @@ footer {
 }
 
 @media (max-width: 400px) {
+
+    .ft {
+        height: 150px;
+        width: 360px;
+        font-size: 20px;
+    }
 
     .bn632-hover {
         width: 180px;
@@ -1048,12 +1054,6 @@ footer {
     .tarjeta1 {
         /*disminuye el tamano de la imagen de las card para esta media*/
         width: 15rem !important;
-    }
-
-    .ft{
-        height: 100px;
-        width: 200px;
-        font-size: 20px;
     }
 
     .img-logo{
