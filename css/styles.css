@@ -651,8 +651,8 @@ footer {
   }
 
   .form-misdatos h4{
-    font-size: 40px;
-    margin-bottom: 15px;
+    font-size: 60px;
+    margin-bottom: 30px;
     padding-left: 12px;
   }
 
@@ -675,18 +675,29 @@ footer {
 
 /*-------- MEDIAS PARA RESPONSIVE ---------*/
 
-@media(max-height:1280px ){
+@media(min-height:1200px ){
     .main-misdatos {
         padding-top: 152px;
-        padding-bottom: 160px;
+        padding-bottom: 285px;
+    }
+
+    .form-misdatos .text-center {
+        margin-top: 60px;
+        font-size: 15px;
     }
 }
 
 @media(max-width: 1440px){
 
+    .bn632-hover {
+        margin-bottom: 60px;
+        font-size: 25px;
+        
+    }
+
     .main-misdatos {
-        padding-top: 152px;
-        padding-bottom: 160px;
+        padding-top: 60px;
+        padding-bottom: 260px;
     }
 
     .container{
@@ -694,8 +705,8 @@ footer {
     }
 
     .form-misdatos h4{
-        font-size: 40px;
-        margin-bottom: 0px;
+        font-size: 60px;
+        margin-bottom: 40px;
         padding-left: 0px;
         text-align: center;
       }
@@ -705,20 +716,26 @@ footer {
     }
 
     .form-misdatos{
-        width: 80%;
+        width: 95%;
         margin: 5px;
         padding: 10px;
       }
 
       .form-misdatos .bn632-hover{
-        margin-top: 5px;
-        height: 40px;
+        margin-top: 60px;
+        height: 60px;
         width: 40%;
       }
 
       .form-misdatos .text-center{
-        font-size: 15px;
+        font-size: 25px;
+        margin-top: 15px;
       }
+
+      .texto-label {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
  
     .main-home{
         /*Le da altura al main y ajusta todo en el centro de la pagina*/ 
@@ -733,7 +750,10 @@ footer {
 
 
 @media(max-width: 1280px){
-  
+    .main-misdatos {
+        padding-top: 60px;
+        padding-bottom: 310px;
+    }
     
     .main-registrarse-2{
         padding-bottom: 50px;
@@ -827,10 +847,21 @@ footer {
 
 @media(max-width: 992px) {
 
-    .main-misdatos {
-        padding-top: 40px;
-        padding-bottom: 40px;
+    .form-misdatos h4 {
+        margin-bottom: 60px;
+      
     }
+
+    .form-misdatos .text-center {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .texto-label {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+  
     .navbar4 {
         /*Le da estilos a la lista del menu, tamaño de letra, centrado y grosor de letra*/
         font-size: 11px !important;
@@ -838,6 +869,11 @@ footer {
 
     .main-home{
         margin: 0px;
+    }
+
+    .main-misdatos {
+        padding-top: 40px;
+        padding-bottom: 295px;
     }
        
     
@@ -989,10 +1025,21 @@ footer {
 
 @media (max-width: 400px) {
 
+    .main-misdatos {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
     .ft {
         height: 150px;
         width: 360px;
         font-size: 20px;
+    }
+
+    .form-misdatos .bn632-hover {
+        margin-top: 60px;
+        height: 60px;
+        width: 80%;
     }
 
     .bn632-hover {
@@ -1120,6 +1167,10 @@ footer {
 .login-box {
     width: 90%;
     margin-left: 15px;
+}
+
+.form-misdatos .text-center {
+    font-size: 15px;
 }
   
 }
