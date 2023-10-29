@@ -677,13 +677,13 @@ footer {
 
 @media(max-width: 1440px){
 
-    .container{
-        margin-bottom: 65px;
+    .main-misdatos {
+        padding-top: 152px;
+        padding-bottom: 160px;
     }
 
-    .main-misdatos{
-        padding-top: 30px;
-        padding-bottom: 30px;
+    .container{
+        margin-bottom: 65px;
     }
 
     .form-misdatos h4{
@@ -833,6 +833,11 @@ footer {
 }
 
 @media(max-width: 767px) {
+
+    .main-misdatos {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     .cabecera {
         /*Posiciona los botones de login y registrase en el menu princial aarriba y a la derecha*/
         align-items: start !important;
