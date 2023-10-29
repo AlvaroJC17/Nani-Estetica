@@ -239,6 +239,25 @@ nav {
     margin: 15px;
 }
 
+/*------- FOOTER GENERAL MENOS EL DE INDEX ---------*/
+.contenedor-logo-final-general {
+    text-align: center;
+    border-top: 1px solid;
+     margin-top: 0px; 
+    padding-top: 0px;
+     padding-bottom: 0px;
+}
+
+.img-logo-final-general {
+    border-radius: 50%;
+    width: 90px;
+}
+
+.titulos-footer-general {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
 /*---------- FOOTER ----------*/
 footer {
     /*Le da el color degradado al footer, el ancho y los maregenes*/
@@ -247,6 +266,7 @@ footer {
     bottom: 0;
     margin: 0px 0px 0px 0px !important;
 }
+
 .divfooter {
     /*Le da estilos a las colummnas del footer, en este caso, la raya de separacion y una separacion arriba*/
     border-right: 1px solid #724921;
@@ -629,6 +649,11 @@ footer {
   }
 
   /*-----------  PAGINA MIS DATOS -----------*/
+.main-misdatos{
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
 
   .body-misdatos{
     background-color:#ebdf9d ;
@@ -655,11 +680,6 @@ footer {
     margin-bottom: 30px;
     padding-left: 12px;
   }
-
-  .form-misdatos .bn632-hover{
-    margin-top: 60px;
-  }
-
   .form-misdatos .text-center{
     font-size: 20px;
   }
@@ -675,31 +695,12 @@ footer {
 
 /*-------- MEDIAS PARA RESPONSIVE ---------*/
 
-@media(min-height:1200px ){
-    .main-misdatos {
-        padding-top: 152px;
-        padding-bottom: 285px;
-    }
-
-    .form-misdatos .text-center {
-        margin-top: 60px;
-        font-size: 15px;
-    }
-}
-
 @media(max-width: 1440px){
 
     .bn632-hover {
-        margin-bottom: 60px;
         font-size: 25px;
         
     }
-
-    .main-misdatos {
-        padding-top: 60px;
-        padding-bottom: 260px;
-    }
-
     .container{
         margin-bottom: 65px;
     }
@@ -722,7 +723,7 @@ footer {
       }
 
       .form-misdatos .bn632-hover{
-        margin-top: 60px;
+        margin-top: 10px;
         height: 60px;
         width: 40%;
       }
@@ -750,10 +751,6 @@ footer {
 
 
 @media(max-width: 1280px){
-    .main-misdatos {
-        padding-top: 60px;
-        padding-bottom: 310px;
-    }
     
     .main-registrarse-2{
         padding-bottom: 50px;
@@ -869,19 +866,11 @@ footer {
 
     .main-home{
         margin: 0px;
-    }
-
-    .main-misdatos {
-        padding-top: 40px;
-        padding-bottom: 295px;
-    }
-       
-    
+    } 
   
 }
 
 @media(max-width: 767px) {
-
   
     .cabecera {
         /*Posiciona los botones de login y registrase en el menu princial aarriba y a la derecha*/
@@ -1024,12 +1013,7 @@ footer {
 }
 
 @media (max-width: 400px) {
-
-    .main-misdatos {
-        padding-top: 40px;
-        padding-bottom: 80px;
-    }
-
+    
     .ft {
         height: 150px;
         width: 360px;
@@ -1170,7 +1154,7 @@ footer {
 }
 
 .form-misdatos .text-center {
-    font-size: 15px;
+    font-size: 20px;
 }
   
 }
