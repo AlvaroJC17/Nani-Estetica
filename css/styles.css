@@ -1113,5 +1113,9 @@ footer {
         /*Le da el color degradado al footer, el ancho y los maregenes*/
         position: absolute;
     }
+
+    .main-home {
+    margin-top: 50px;
+}
       
 }
