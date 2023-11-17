@@ -525,6 +525,14 @@ footer {
 
   /*PAGINA DE REGISTRO DE USUARIOS*/
 
+  .section-registrarse{
+    border-radius: 40px 0px 40px 0px;
+    background-color: #db9e42;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.500);
+    width: 50%;
+    margin: 30px
+}
+
   .main-registrarse-2{
     padding-bottom: 35px;
     padding-top: 35px;
@@ -559,7 +567,7 @@ footer {
 
 /*BOTON DE FORM COMPLETAR DATOS*/
 .bn632-hover {
-    width: 70%;
+    width: 50%;
     font-size: 18px !important;
     font-weight: 600;
     color: #fff;
@@ -678,9 +686,6 @@ footer {
     margin-bottom: 30px;
     padding-left: 12px;
   }
-  .form-misdatos .text-center{
-    font-size: 20px;
-  }
 
   .footer-misdatos {
     /*Le da el color degradado al footer, el ancho y los maregenes*/
@@ -692,6 +697,13 @@ footer {
 }
 
 /*-------- RESERVA DE TURNOS ----------*/
+
+.texto-solicitar-turno{
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
 
 .boton-pag-turno .bn632-hover{
     width: 120px;
@@ -712,7 +724,7 @@ footer {
     display: block;
     min-height: 1.9rem;
     padding-left: 1.5em;
-    margin-bottom: 0.125rem;
+    margin-bottom: 0.425rem;
     margin-left: 1rem;
 }
 
@@ -729,6 +741,67 @@ footer {
     padding-right: 20px;
     padding-bottom: 50px;
 }
+
+/*-------- LISTA USUARIOS --------------*/
+.alinear-tabla{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filas-tabla-baja{
+    margin-right: 10px;
+}
+
+.fila-tabla-select{
+    width: 160px !important;
+    
+}
+    
+.table{
+    width: 90%;
+}
+
+.filas-tabla-baja {
+    width: 101px !important;
+}
+
+.fila-tabla-select .form-select {
+    background-color: white;
+}
+
+.table>:not(caption)>*>* {
+    padding: 0.5rem 0.5rem;
+    color: var(--bs-table-color-state,var(--bs-table-color-type,var(--bs-table-color)));
+    background-color: #ebdf9d;
+    border-bottom-width: var(--bs-border-width);
+    box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state,var(--bs-table-bg-type,var(--bs-table-accent-bg)));
+}
+
+tr {
+    border-color: black;
+    border-style: none;
+  
+}
+
+.radius .form-check{
+    display: flex;
+    flex-direction:row-reverse ;
+}
+
+.filas-tabla-baja .btn{
+    width: 100px;
+}
+
+.boton-listado .bn632-hover{
+    border-radius: 0px;
+    font-size: 1rem;
+    font-weight: initial;
+    width: 100px;
+    height: 37px;
+    border-radius: 0.375rem;
+}
+
 /*-------- MEDIAS PARA RESPONSIVE ---------*/
 
 @media(max-width: 1280px){
@@ -748,35 +821,15 @@ footer {
         width: 140px !important;
     }
 
-    .table{
-        width: 90%;
-    }
-
     .fila-tabla-select{
         width: 160px !important;
         
-    }
-
-    .fila-tabla-select .form-select{
-        background-color: greenyellow;
-    }
-
-    .filas-tabla-baja{
-        width: 101px !important;
     }
 
     .main-turnos{
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 50px;
-    }
-
-    .form-check .form-check-input {
-        margin-top: 18px;
-        width: 20px;
-        height: 20px;
-        float: left;
-        margin-left: -30px;
     }
   
     .info-silicitar-turno{
@@ -800,28 +853,11 @@ footer {
     align-items: center;
     justify-content: center;
     border-radius: 40px 0px 40px 0px;
-    font-size: 30px;
     background-color: #ebdf9d;
     border: 2px solid white;
     box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.500);
     padding: 15px 0px 15px 0px;
 }
-
-    .section-registrarse{
-        border-radius: 40px 0px 40px 0px;
-        background-color: #db9e42;
-        box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.500);
-        width: 45%;
-        margin: 30px
-    }
-   
-    .boton-pag-regi .bn632-hover{
-        width: 50%;
-        font-size: 16px;
-        font-weight: 600;
-    }
-       
-        
     .form-misdatos h4 {
         font-size: 50px;
         margin-bottom: 20px;
@@ -834,11 +870,6 @@ footer {
         padding-bottom: 50px;
       
       }
-
-    .form-misdatos .text-center {
-        font-size: 18px;
-        margin-top: 15px;
-    }
 
     .form-misdatos .bn632-hover {
         margin-top: 10px;
@@ -955,15 +986,19 @@ footer {
 
 @media(max-width: 992px) {
 
+    .section-completar-datos{
+        width: 95%;
+        margin: 15px
+    }
+    .section-registrarse{
+        width: 95%;
+        margin: 15px
+    }
+
     .form-misdatos h4 {
         margin-bottom: 40px;
         text-align: center;
       
-    }
-
-    .form-misdatos .text-center {
-        margin-top: 0px;
-        font-size: 20px;
     }
 
     .texto-label {
@@ -980,10 +1015,13 @@ footer {
 
 @media(max-width: 767px) {
 
+    .esconder-col{
+        display: none ;
+    }
+
     h3{
         text-align: center;
     }
-      
 
     .login-box{
         border-radius: 40px 0px 40px 0px;
@@ -1256,10 +1294,6 @@ footer {
 .login-box {
     width: 90%;
     margin-left: 15px;
-}
-
-.form-misdatos .text-center {
-    font-size: 20px;
 }
 
 h3{
